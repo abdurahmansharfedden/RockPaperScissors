@@ -48,7 +48,7 @@ function playRound(){
         console.log("Human wins! Paper beats rock")
         humanScore = humanScore + 1;
     } else if (a === 2 && b === 1) {
-        console.log("Human wins! Paper beats rock")
+        console.log("Computer wins! Paper beats rock")
         computerScore = computerScore + 1;
     } else if (a === 1 && b === 3) {
         console.log("Computer wins! Rock beats scissors")
@@ -73,8 +73,10 @@ function playGame(){
     }
     if (humanScore > computerScore){
         console.log("Human wins! ");
-    }else{
+    }else if (computerScore > humanScore){
         console.log("Computer Wins! ");
+    } else {
+        console.log("It's a draw! ");
     }
     console.log("The score is | Human: " + humanScore + " Computer: " + computerScore );
 }
