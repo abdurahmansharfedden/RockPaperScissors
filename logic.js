@@ -23,7 +23,7 @@ function getComputerChoice(){
 
 function getHumanChoice(){
     let y = prompt("Enter Rock, Paper, or Scissors");
-    y.toLocaleLowerCase();
+    y = y.toLowerCase();
     if (y === "rock") {
        b = 1;
     }else if (y === "paper") {
